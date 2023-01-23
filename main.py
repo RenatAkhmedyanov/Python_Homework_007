@@ -54,7 +54,7 @@ def bus_fleet_book():
                   '| Добавление нового автобуса |\n'
                   '==============================')
             while True:
-                fn.save_data_to_file('bus.txt', input('ID автобуса: '), input('Госномер автобуса: '))
+                fn.save_data_to_file('bus.txt', input('ID автобуса(в формате bus#): '), input('Госномер автобуса: '))
                 choice = input('\nНажмите Enter чтобы добавить новый автобус\nВведите 0 для выхода\n')
                 if choice == '0': 
                     bus_fleet_book()
@@ -78,7 +78,7 @@ def bus_fleet_book():
                   '| Добавление нового водителя |\n'
                   '==============================')
             while True:
-                fn.save_data_to_file('driver.txt', input('ID водителя: '), input('Фамилия Имя Отчество (через пробел): '))
+                fn.save_data_to_file('driver.txt', input('ID водителя(в формате driver#): '), input('Фамилия Имя Отчество (через пробел): '))
                 choice = input('\nНажмите Enter чтобы добавить нового водителя\nВведите 0 для выхода\n')
                 if choice == '0': 
                     bus_fleet_book()
@@ -101,7 +101,7 @@ def bus_fleet_book():
                   '| Добавление нового маршрута |\n'
                   '==============================')
             while True:
-                fn.save_data_to_file('route.txt', input('ID маршрута: '), input('Введите (через пробел) номер маршрута, ID автобуса, ID водителя: '))
+                fn.save_data_to_file('route.txt', input('ID маршрута(в формате route#): '), input('Введите (через пробел) номер маршрута, ID автобуса, ID водителя: '))
                 choice = input('\nНажмите Enter чтобы добавить новый маршрут\nВведите 0 для выхода\n')
                 if choice == '0': 
                     bus_fleet_book()
